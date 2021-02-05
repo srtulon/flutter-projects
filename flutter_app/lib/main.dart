@@ -3,7 +3,9 @@ import 'package:flutter/material.dart';
 void main() {
   runApp(MaterialApp(
     home: Scaffold(
+
       appBar: AppBar(
+        backgroundColor: Colors.cyanAccent,
         title: Text('Title'),
         centerTitle: true,
       ),
