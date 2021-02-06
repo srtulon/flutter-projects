@@ -5,7 +5,7 @@ void main() {
     home: Scaffold(
 
       appBar: AppBar(
-        backgroundColor: Colors.cyanAccent,
+        backgroundColor: Colors.red[700],
         title: Text('Title'),
         centerTitle: true,
       ),
@@ -14,6 +14,7 @@ void main() {
       ),
       floatingActionButton: FloatingActionButton(
         child: Text('click'),
+        backgroundColor: Colors.red[700]
       ),
     ),
   ));
