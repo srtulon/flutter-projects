@@ -10,7 +10,16 @@ void main() {
         centerTitle: true,
       ),
       body: Center(
-        child: Text('body'),
+        child: Text(
+          'hello',
+          style: TextStyle(
+            fontSize: 20,
+            fontWeight: FontWeight.bold,
+            letterSpacing: 2,
+            color: Colors.blue[800],
+            fontFamily: 'ArchitectsDaughter'
+          )
+        ),
       ),
       floatingActionButton: FloatingActionButton(
         child: Text('click'),
