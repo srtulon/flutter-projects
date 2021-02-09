@@ -16,7 +16,7 @@ void main() {
             fontSize: 20,
             fontWeight: FontWeight.bold,
             letterSpacing: 2,
-            color: Colors.blue[800],
+            color: Colors.red[700],
             fontFamily: 'ArchitectsDaughter'
           )
         ),
