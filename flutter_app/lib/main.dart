@@ -17,11 +17,14 @@ class Home extends StatelessWidget {
         centerTitle: true,
       ),
       body: Center(
-        child: RaisedButton(
+        child: RaisedButton.icon(
+          icon: Icon(
+            Icons.all_inclusive_outlined
+          ),
           onPressed: (){
-            print('Clicked');
+            print('Infinity');
           },
-          child: Text("click"),
+          label: Text('Infinity'),
           color: Colors.red[700],
         )
       ),
