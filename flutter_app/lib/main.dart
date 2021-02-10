@@ -17,11 +17,17 @@ class Home extends StatelessWidget {
         centerTitle: true,
       ),
       body: Center(
-        child:Image.asset('assets/image1.png')
+        child:Icon(
+          Icons.watch_later_outlined,
+          color: Colors.redAccent,
+          size: 60,
+        ),
       ),
       floatingActionButton: FloatingActionButton(
         onPressed: () {},
-        child: Text('click'),
+        child: Icon(
+          Icons.add,
+        ),
         backgroundColor: Colors.red[700],
       ),
     );
