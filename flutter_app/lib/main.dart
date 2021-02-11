@@ -1,3 +1,4 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -16,17 +17,16 @@ class Home extends StatelessWidget {
         title: Text('Title'),
         centerTitle: true,
       ),
-      body: Center(
-        child: IconButton(
-          icon: Icon(
-            Icons.all_inclusive_outlined
-          ),
-          onPressed: (){
-            print('Infinity');
-          },
-          iconSize: 50,
-          color: Colors.red[700],
-        )
+      body: Container(
+        padding: EdgeInsets.fromLTRB(30, 15, 20, 25),
+        margin: EdgeInsets.all(20),
+        color: Colors.black,
+        child: Text(
+          'hello',
+          style: TextStyle(
+            color: Colors.grey,
+          )
+        ),
       ),
       floatingActionButton: FloatingActionButton(
         onPressed: () {},
