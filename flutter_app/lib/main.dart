@@ -17,14 +17,25 @@ class Home extends StatelessWidget {
         title: Text('Title'),
         centerTitle: true,
       ),
-      body: Padding(
-        padding: EdgeInsets.fromLTRB(30, 15, 20, 25),
-        child: Text(
-          'hello',
-          style: TextStyle(
-            color: Colors.grey,
-          )
-        ),
+      body: Row(
+        mainAxisAlignment: MainAxisAlignment.spaceEvenly ,
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          Text('hello'),
+          FlatButton(
+            onPressed: (){},
+            color: Colors.deepPurpleAccent,
+            child: Icon(
+              Icons.watch_later_outlined,
+            ),
+          ),
+          Container(
+            color: Colors.indigo,
+            padding: EdgeInsets.all(30),
+            child: Text('container'),
+          ),
+
+        ],
       ),
       floatingActionButton: FloatingActionButton(
         onPressed: () {},
