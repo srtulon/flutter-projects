@@ -17,10 +17,8 @@ class Home extends StatelessWidget {
         title: Text('Title'),
         centerTitle: true,
       ),
-      body: Container(
+      body: Padding(
         padding: EdgeInsets.fromLTRB(30, 15, 20, 25),
-        margin: EdgeInsets.all(20),
-        color: Colors.black,
         child: Text(
           'hello',
           style: TextStyle(
