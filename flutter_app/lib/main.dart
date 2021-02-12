@@ -20,6 +20,11 @@ class Home extends StatelessWidget {
       body: Row(
         children: [
           Expanded(
+              flex: 2,
+              child: Image.asset('assets/image1.png'),
+
+          ),
+          Expanded(
             flex: 3,
             child: Container(
               padding: EdgeInsets.all(30),
