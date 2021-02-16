@@ -33,7 +33,7 @@ class Card extends StatelessWidget {
             Divider(
               height: 60,
               color: Colors.grey,
-              thickness: 5,
+              thickness: 2,
             ),
             SizedBox(height: 20),
             Text(
@@ -93,5 +93,18 @@ class Card extends StatelessWidget {
         ),
       )
     );
+  }
+}
+
+
+class Test extends StatefulWidget {
+  @override
+  _TestState createState() => _TestState();
+}
+
+class _TestState extends State<Test> {
+  @override
+  Widget build(BuildContext context) {
+    return Container();
   }
 }
