@@ -14,6 +14,9 @@ class Card extends StatefulWidget {
 }
 
 class _CardState extends State<Card> {
+
+  int level=0;
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -78,6 +81,24 @@ class _CardState extends State<Card> {
               ),
             ),
             SizedBox(height: 30),
+            Text(
+              'Level',
+              style: TextStyle(
+                color: Colors.grey,
+                letterSpacing: 5,
+              ),
+            ),
+            SizedBox(height: 10),
+            Text(
+              '$level',
+              style: TextStyle(
+                color: Colors.cyan,
+                letterSpacing: 5,
+                fontSize: 15,
+                fontWeight: FontWeight.bold,
+              ),
+            ),
+            SizedBox(height: 30),
             Row(
               children: [
                 Icon(
@@ -96,7 +117,16 @@ class _CardState extends State<Card> {
             ),
           ],
         ),
-      )
+      ),
+        floatingActionButton: FloatingActionButton(
+          onPressed:(){
+            setState(() {
+              level+=1;
+            });
+          },
+          backgroundColor: Colors.cyan,
+          child: Icon(Icons.add),
+    ),
     );
   }
 }
